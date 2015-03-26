@@ -1,0 +1,23 @@
+# Travis-CI for Drupal 8.
+
+language: php
+php:
+  - 5.4
+
+mysql:
+  database: drupal
+  username: root
+  encoding: utf8
+
+before_script:
+  # Set up the Github OAuth token.
+  # Please change this in your own fork.
+  - "mkdir -p ~/.composer"
+  - cp .travis.composer.config.json ~/.composer/config.json
+  - git clone --branch 8.0.x http://git.drupal.org/project/drupal.git
+  - cd drupal
+  - composer require crell/api-problem
+
+script:
+  # Run PHPUnit tests.
+  - ./vendor/bin/phpunit -c core/
