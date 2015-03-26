@@ -25,7 +25,7 @@ How?
 The travis-ci build happens whenever someone pushes to this repo. If you don't have access, you can't push against this repo (and you don't). You can, however, choose from the following options:
 
 * Fork your own repo, and push to your own repo to your heart's content.
-* Perform the test locally. Just perform the commands listed in the What? section.
+* Perform the test locally. Just clone the Drupal 8 repo and perform the commands listed in the What? section.
 
 Why?
 ---
