@@ -1,5 +1,4 @@
-# Travis-CI for Drupal 8.
-
+sudo: false
 language: php
 php:
   - 5.4
@@ -10,6 +9,7 @@ mysql:
   encoding: utf8
 
 before_script:
+  - composer selfupdate --no-progress
   # Set up the Github OAuth token.
   # Please change this in your own fork.
   - "mkdir -p ~/.composer"
