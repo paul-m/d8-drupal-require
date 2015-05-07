@@ -30,6 +30,6 @@ The travis-ci build happens whenever someone pushes to this repo. If you don't h
 Why?
 ---
 
-Drupal 8's current double-front-controller-to-the-autoloader strategy doesn't make any sense. It's reasonable that a person new to Drupal would see an existing `composer.json` file in the root directory and assume it's the one to use. We shouldn't reward them with a DrupalWTF.
+Drupal 8's current double-front-controller-to-the-autoloader strategy doesn't make any sense.
 
-
+We can fix it in this issue: https://www.drupal.org/node/2380389
